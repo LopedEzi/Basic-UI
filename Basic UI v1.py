@@ -28,9 +28,7 @@ while True:
     elif event == "Read":
         if value ['-IL-'] and all(char.isdigit() or char in {'-', ':' , ' '} for char in value['-IL-']): #checks for the correct date
 
-            pg.popup("Your name is:", value[0],
-                     "Your Last-Name is:", value[1],
-                     "Your BirthDate is:", value['-IL-'])
+            pg.popup('Sucessfuly registered')
 
             # Save the information to a file
             with open("user_data.txt", "a") as file:
